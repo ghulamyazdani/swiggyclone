@@ -1,5 +1,5 @@
 const loginForm = document.getElementById("loginForm");
-const finalValidation = document.getElementById("final-validation");
+var finalValidation = document.getElementById("final-validation-login");
 
 loginForm.addEventListener("submit", handleSubmit);
 var logindata = {};

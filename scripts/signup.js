@@ -1,6 +1,6 @@
 // Signup
 const signupForm = document.getElementById("signupForm");
-const finalValidation = document.getElementById("final-validation");
+var finalValidation = document.getElementById("final-validation");
 var signupdata = {};
 
 signupForm.addEventListener("submit", handleSubmit);
@@ -43,5 +43,5 @@ function signup(data) {
   userData.push(data);
   localStorage.setItem("usersData", JSON.stringify(userData));
   //   localStorage.setItem("user", JSON.stringify(data));
-  window.location.href = "login.html";
+  // window.location.href = "login.html";
 }
