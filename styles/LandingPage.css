@@ -394,3 +394,8 @@ form {
   cursor: pointer;
   margin-left: 0.2rem;
 }
+
+#locationShow {
+  text-align: center;
+  margin-top: 5rem;
+}

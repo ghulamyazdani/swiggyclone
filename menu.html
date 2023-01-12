@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Swiggy Clone Application made using React Js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="https://res.cloudinary.com/swiggy/image/upload/portal/c/icon-192x192.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/LandingPage.css" />
+    <link rel="stylesheet" href="styles/Footer.css" />
+
+    <title>Swiggy Clone</title>
+  </head>
+  <body>
+    <!-- <div id="loading">
+      <img
+        id="loading-image"
+        src="https://media.tenor.com/ZI9R3y38pg8AAAAM/lari-pagi.gif"
+        alt="Loading..."
+      />
+    </div> -->
+    <nav class="navbar">
+      <img
+        style="width: 70px"
+        src="https://logosandtypes.com/wp-content/uploads/2021/01/Swiggy.png"
+      />
+      <div class="form-inline">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"
+          />
+        </svg>
+      </div>
+    </nav>
+    <div class="two">
+      <div class="car"><h1 id="locationShow"></h1></div>
+    </div>
+
+    <main class="footer_1">
+      <div class="div1">
+        <h3>COMPANY</h3>
+        <div class="div1_list">
+          <div class="div1_list_p1">About Us</div>
+          <div class="div1_list_p1">Team</div>
+          <div class="div1_list_p1">Careers</div>
+          <div class="div1_list_p1">Swiggy Blog</div>
+          <div class="div1_list_p1">Bug Bounty</div>
+          <div class="div1_list_p1">Swiggy One</div>
+          <div class="div1_list_p1">Swiggy Corporate</div>
+          <div class="div1_list_p1">Swiggy Instamart</div>
+        </div>
+      </div>
+      <div class="div2">
+        <h3>CONTACT</h3>
+        <div class="div2_list">
+          <div class="div2_list_p2">Help & Support</div>
+          <div class="div2_list_p2">Partner with us</div>
+          <div class="div2_list_p2">Ride with us</div>
+        </div>
+      </div>
+      <div class="div3">
+        <h3>LEGAL</h3>
+        <div class="div3_list">
+          <div class="div3_list_p3">Terms & Conditions</div>
+          <div class="div3_list_p3">Refund & Cancellation</div>
+          <div class="div3_list_p3">Privacy Policy</div>
+          <div class="div3_list_p3">Cookie Policy</div>
+          <div class="div3_list_p3">Offer Terms</div>
+          <div class="div3_list_p3">Phishing & Fraud</div>
+        </div>
+      </div>
+      <div class="div4">
+        <div>
+          <a
+            href="https://play.google.com/store/apps/details?id=in.swiggy.android"
+            ><img
+              class="foot_icon"
+              style="width: 200px; height: 65px"
+              src="https://web.archive.org/web/20210903174711im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv"
+          /></a>
+        </div>
+
+        <div>
+          <a
+            href="https://itunes.apple.com/in/app/swiggy-food-order-delivery/id989540920"
+            ><img
+              class="foot_icon"
+              style="width: 200px; height: 65px"
+              src="https://web.archive.org/web/20210903174711im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"
+          /></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img
+        class="footer_logo"
+        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
+        width="200px"
+        height="60px"
+      />
+      <p style="color: white; font-size: 21px">&copy; 2022 Swiggy</p>
+      <div
+        style="
+          width: 200px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+        class="icons"
+      >
+        <img
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"
+          width="24"
+          height="24"
+        />
+        <img
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd"
+          width="24"
+          height="24"
+        />
+        <img
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh"
+          width="24"
+          height="24"
+        />
+        <img
+          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"
+          width="24"
+          height="24"
+        />
+      </div>
+    </footer>
+
+    <!-- <script src="scripts/logout.js"></script> -->
+    <!-- <script src="scripts/login.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/signup.js"></script>
+    <script src="scripts/logout.js"></script> -->
+
+    <script src="scripts/geolocation.js"></script>
+  </body>
+</html>
