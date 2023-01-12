@@ -47,6 +47,89 @@
         alt="Loading..."
       />
     </div> -->
+    <div class="drawer">
+      <div class="drawer-align">
+        <div class="login_form">
+          <div class="mb-5">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="48" height="48" fill="white" fill-opacity="0.01" />
+              <path
+                d="M14 14L34 34"
+                stroke="#333"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M14 34L34 14"
+                stroke="#333"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="left_div">
+            <h2>Login</h2>
+            <div style="width: 190px; margin-top: 5px"></div>
+            <p class="link_register">
+              or
+              <a style="cursor: pointer"> create an account </a>
+            </p>
+          </div>
+          <div
+            style="width: 20px; height: 3px; background-color: #101003"
+          ></div>
+          <div class="right_div">
+            <img
+              src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/Image-login_btpq7r"
+              alt=""
+              class="food_wrap"
+            />
+          </div>
+          <form id="loginForm">
+            <!-- <div id="sign-in-button"></div> -->
+            <input
+              type="text"
+              class="Number_input"
+              autofocus="true"
+              spellcheck="{false}"
+              id="inputEmailOrUser4"
+              name="emailorusername"
+              placeholder="Email or Username"
+            />
+            <div id="email-validation" class="text-danger"></div>
+            <br />
+            <input
+              type="password"
+              class="Number_input"
+              autofocus="true"
+              name="password"
+              id="inputPassword4"
+              placeholder="Password"
+            />
+            <div id="password-validation" class="text-danger"></div>
+            <div id="final-validation" class="text-danger"></div>
+            <button type="submit" class="login_btn">Login</button>
+
+            <!-- <input type="submit" value="CONTINUE" class="login_btn" /> -->
+          </form>
+          <div class="foot_text">
+            <p>
+              By clicking on Login, I accept the terms & Conditions & Privacy
+              Policy
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="split">
       <div class="left">
         <nav class="d-flex flex-row align-items-center justify-content-center">
@@ -58,10 +141,10 @@
             />
           </a>
           <div class="form-inline">
-            <button id="login">Login</button>
+            <button id="loginopen">Login</button>
           </div>
           <div>
-            <button id="signup">Sign up</button>
+            <button id="signupopen">Sign up</button>
           </div>
         </nav>
         <div class="animation">
@@ -275,7 +358,7 @@
     </main>
     <footer>
       <img
-        className="footer_logo"
+        class="footer_logo"
         src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
         width="200px"
         height="60px"
@@ -288,7 +371,7 @@
           justify-content: space-between;
           align-items: center;
         "
-        className="icons"
+        class="icons"
       >
         <img
           src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"
@@ -314,7 +397,7 @@
     </footer>
 
     <!-- <script src="scripts/logout.js"></script> -->
-
+    <script src="scripts/login.js"></script>
     <!-- <script src="scripts/script.js"></script> -->
   </body>
 </html>
