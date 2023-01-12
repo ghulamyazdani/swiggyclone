@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Swiggy Clone Application made using React Js"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="https://res.cloudinary.com/swiggy/image/upload/portal/c/icon-192x192.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/LandingPage.css" />
+
+    <title>Swiggy Clone</title>
+  </head>
+  <body>
+    <!-- <div id="loading">
+      <img
+        id="loading-image"
+        src="https://media.tenor.com/ZI9R3y38pg8AAAAM/lari-pagi.gif"
+        alt="Loading..."
+      />
+    </div> -->
+    <div class="split">
+      <div class="left">
+        <nav class="d-flex flex-row align-items-center justify-content-center">
+          <a class="navbar-brand" href="/">
+            <img
+              src="images/Swiggy_Logo_9.png"
+              class="d-inline-block align-top"
+              alt=""
+            />
+          </a>
+          <div class="form-inline">
+            <button id="login">Login</button>
+          </div>
+          <div>
+            <button id="signup">Sign up</button>
+          </div>
+        </nav>
+        <div class="animation">
+          <h1 id="ani" class="animate-bottom"></h1>
+          <h2 style="font-size: 24px; font-weight: 400; color: #80807d">
+            Order food from favourite resturants near you.
+          </h2>
+        </div>
+        <div class="trip" id="appending">
+          <div class="check">
+            <input
+              class="chinu"
+              id="inputt"
+              type="text"
+              placeholder="Enter your delivery location"
+              autofocus="{true}"
+              spellcheck="{false}"
+            />
+
+            <button class="posey" onClick="">
+              <i class="far fa-location"></i> Locate Me
+            </button>
+
+            <button id="changing" value="toogle_food">Find Food</button>
+          </div>
+        </div>
+        <div style="margin-bottom: 40px; margin-top: 50px">
+          <h3 style="font-size: 18px; font-weight: 600; color: grey">
+            POPULAR CITIES IN INDIA
+          </h3>
+          <div style="padding-right: 15px" class="popular alterflex">
+            <div style="color: grey">Ahmedabad</div>
+            <div style="color: lightgray">Bangalore</div>
+            <div style="color: grey">Chennai</div>
+            <div style="color: lightgray">Delhi</div>
+            <div style="color: grey">Gurgaon</div>
+            <div style="color: lightgray">Hyderabad</div>
+            <div style="color: grey">Kolkata</div>
+            <div style="color: lightgray">Mumbai</div>
+            <div style="color: grey">Pune &nbsp;&</div>
+            <div style="color: lightgray">more.</div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img
+          style="
+            width: 755px;
+            height: 100%;
+            object-fit: cover;
+            object-position: -3px -27px;
+          "
+          src="https://web.archive.org/web/20210903175246im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq"
+        />
+      </div>
+    </div>
+    <div class="two">
+      <div class="car">
+        <div>
+          <img
+            style="width: 105px; height: 199px"
+            src="https://web.archive.org/web/20210903175337im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+          />
+        </div>
+        <div>
+          <h3>No Minimum Order</h3>
+        </div>
+        <div>
+          <p>
+            Order in for yourself or for the group, with no restrictions on
+            order value
+          </p>
+        </div>
+      </div>
+      <div class="car">
+        <div>
+          <img
+            style="width: 105px; height: 199px"
+            src="https://web.archive.org/web/20210903175337im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+          />
+        </div>
+        <div>
+          <h3>No Minimum Order</h3>
+        </div>
+        <div>
+          <p>
+            Order in for yourself or for the group, with no restrictions on
+            order value
+          </p>
+        </div>
+      </div>
+      <div class="car">
+        <div>
+          <img
+            style="width: 105px; height: 199px"
+            src="https://web.archive.org/web/20210903175337im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+          />
+        </div>
+        <div>
+          <h3>No Minimum Order</h3>
+        </div>
+        <div>
+          <p>
+            Order in for yourself or for the group, with no restrictions on
+            order value
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="scripts/logout.js"></script> -->
+
+    <!-- <script src="scripts/script.js"></script> -->
+  </body>
+</html>
