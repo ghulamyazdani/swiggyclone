@@ -80,7 +80,9 @@
             <div style="width: 190px; margin-top: 5px"></div>
             <p class="link_register">
               or
-              <a style="cursor: pointer"> create an account </a>
+              <a onclick="handleSignupOpen()" style="cursor: pointer">
+                create an account
+              </a>
             </p>
           </div>
           <div
@@ -156,7 +158,9 @@
             <div style="width: 190px; margin-top: 5px"></div>
             <p class="link_register">
               or
-              <a style="cursor: pointer"> login to your account </a>
+              <a onclick="handleLoginOpen()" style="cursor: pointer">
+                login to your account
+              </a>
             </p>
           </div>
           <div
@@ -230,12 +234,14 @@
               alt=""
             />
           </a>
-          <div class="form-inline">
+          <div
+            id="mainop"
+            class="d-flex flex-row align-items-center justify-content-center"
+          >
             <button id="loginopen">Login</button>
-          </div>
-          <div>
             <button id="signupopen">SignUp</button>
           </div>
+          <!-- <button id="userbutton">Username</button> -->
         </nav>
         <div class="animation">
           <h1 id="ani" class="animate-bottom"></h1>
@@ -254,7 +260,7 @@
               spellcheck="{false}"
             />
 
-            <button class="posey" onClick="">
+            <button id="locateme" class="posey">
               <i class="far fa-location"></i> Locate Me
             </button>
 
@@ -490,6 +496,7 @@
     <script src="scripts/login.js"></script>
     <script src="scripts/validation.js"></script>
     <script src="scripts/signup.js"></script>
+    <script src="scripts/logout.js"></script>
 
     <script src="scripts/script.js"></script>
   </body>
