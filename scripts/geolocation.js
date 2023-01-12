@@ -2,6 +2,10 @@ var fulllocation = "";
 
 window.onload = () => {
   // document.getElementById("loading").style.display = "none";
+  const location = localStorage.getItem("location");
+  if (location) {
+    document.getElementById("locationShow").innerHTML = location;
+  }
   if (user && window.location.href.includes("menu.html")) {
     // window.location.href = "menu.html";
   } else if (!user && window.location.href.includes("menu.html")) {
@@ -24,6 +28,7 @@ function geoLocation() {
           localStorage.setItem("location", fulllocation);
           console.log(fulllocation);
           window.location.href = "menu.html";
+          document.getElementById("location").innerHTML = fulllocation;
           // setQuery(fetch);
           // setisLoading(false);
         }, 1000);
