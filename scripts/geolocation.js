@@ -6,11 +6,11 @@ window.onload = () => {
   if (location) {
     document.getElementById("locationShow").innerHTML = location;
   }
-  if (user && window.location.href.includes("menu.html")) {
-    // window.location.href = "menu.html";
-  } else if (!user && window.location.href.includes("menu.html")) {
-    window.location.href = "index.html";
-  }
+  // if (user && window.location.href.includes("menu.html")) {
+  //   // window.location.href = "menu.html";
+  // } else if (!user && window.location.href.includes("menu.html")) {
+  //   window.location.href = "index.html";
+  // }
 };
 
 document.getElementById("locateme").addEventListener("click", geoLocation);
@@ -29,13 +29,9 @@ function geoLocation() {
           console.log(fulllocation);
           window.location.href = "menu.html";
           document.getElementById("location").innerHTML = fulllocation;
-          // setQuery(fetch);
-          // setisLoading(false);
         }, 1000);
       })
       .catch(() => {
-        // setisLoading(false);
-        // setQuery("");
         console.log("error");
       });
   });
