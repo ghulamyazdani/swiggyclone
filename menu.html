@@ -119,10 +119,33 @@
     <div class="two">
       <div class="car"><h1 id="locationShow"></h1></div>
     </div>
-
+    <div class="Recentorders">
+      <p>Recent Orders -</p>
+      <div id="recOrders"></div>
+    </div>
     <div class="searchSection">
-      <input type="text" placeholder="Search" id="search-term" />
-      <button id="search"><i class="fas fa-search"></i></button>
+      <div class="searchForm">
+        <input type="text" placeholder="Search" id="search-term" />
+        <button id="search"><i class="fas fa-search"></i></button>
+      </div>
+      <i onclick="handleFilterOpen()" class="fas fa-filter"></i>
+      <div
+        id="filterBox"
+        class="filterBox"
+        style="position: absolute; display: none; flex-direction: column"
+      >
+        <h6>Filter</h6>
+        <div style="position: relative" class="form-group">
+          <div class="form-check">
+            <input class="" type="checkbox" id="gridCheck" />
+            <label class="" for="gridCheck"> Veg </label>
+          </div>
+          <div class="form-check">
+            <input class="" type="checkbox" id="gridCheck2" />
+            <label class="" for="gridCheck2"> Non Veg </label>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="meals" id="meals"></div>
 

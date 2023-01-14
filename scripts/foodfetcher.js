@@ -7,6 +7,10 @@ getMealMount();
 window.onload = () => {
   // document.getElementById("loading").style.display = "none";
   const meals = JSON.parse(localStorage.getItem("meals"));
+  const recentmeals = localStorage.getItem("recentmeals");
+  if (recentmeals) {
+    document.getElementById("recOrders").innerHTML = recentmeals;
+  }
   if (meals) {
     document.getElementById("cartCount").innerHTML = meals.length;
   }
@@ -21,6 +25,13 @@ window.onload = () => {
     });
   }
 };
+
+function LoadCartMeal() {
+  const meals = JSON.parse(localStorage.getItem("meals"));
+  if (meals) {
+    document.getElementById("cartCount").innerHTML = meals.length;
+  }
+}
 searchBtn.addEventListener("click", async () => {
   // clean container
   mealsEl.innerHTML = "";
@@ -73,6 +84,7 @@ function addMeal(mealData) {
   const btn = meal.querySelector(".add-btn");
   btn.addEventListener("click", () => {
     addMealToLS(mealData.idMeal, mealData.strMeal, mealData.strMealThumb);
+    LoadCartMeal();
   });
 
   mealsEl.appendChild(meal);
@@ -125,4 +137,30 @@ function getMealsFromLS() {
   const meals = JSON.parse(localStorage.getItem("meals"));
 
   return meals === null ? [] : meals;
+}
+
+document.getElementById("placeorder").addEventListener("click", () => {
+  let recent = JSON.parse(localStorage.getItem("meals"));
+
+  localStorage.setItem(
+    "recentmeals",
+    recent.map((e) => e.name)
+  );
+  document.getElementById("recOrders").innerHTML = recent.map((e) => e.name);
+
+  console.log("clicked");
+  localStorage.setItem("meals", JSON.stringify([]));
+  setCartCount(0);
+});
+
+function setCartCount(count) {
+  document.getElementById("cartCount").innerHTML = count;
+}
+
+function handleFilterOpen() {
+  if (document.getElementById("filterBox").style.display === "none") {
+    document.getElementById("filterBox").style.display = "flex";
+  } else {
+    document.getElementById("filterBox").style.display = "none";
+  }
 }

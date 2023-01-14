@@ -193,14 +193,20 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.searchSection .fa-filter {
+  cursor: pointer;
+}
+.searchForm {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.searchSection input:focus {
-  border: solid #fc8019 1px;
-  padding: 1rem;
-  width: 400px;
-}
-.searchSection input {
+.searchSection #search-term {
   border: solid #fc8019 1px;
 
   padding: 1rem;
@@ -210,4 +216,27 @@
   background-color: #fc8019;
   border: none;
   color: white;
+}
+
+.Recentorders {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.Recentorders p {
+  font-size: 1.3rem;
+}
+
+.filterBox {
+  background-color: #fff;
+  left: 65%;
+  margin: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+  border-radius: 3px;
+}
+
+.form-group {
+  display: flex;
 }

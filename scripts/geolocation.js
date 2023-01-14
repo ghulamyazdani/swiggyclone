@@ -25,6 +25,7 @@ function geoLocation() {
       .then((name) => {
         setTimeout(() => {
           fulllocation = `${name.city.name}, ${name.city.country}`;
+          document.getElementById("inputt").value = fulllocation;
           localStorage.setItem("location", fulllocation);
           console.log(fulllocation);
           window.location.href = "menu.html";
